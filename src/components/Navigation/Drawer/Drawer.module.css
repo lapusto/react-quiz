@@ -7,7 +7,7 @@
   max-width: 300px;
   padding: 20px 10px;
   box-sizing: border-box;
-  background: white;
+  background: #ffcc00;
   transform: translateX(0px);
   transition: transform 0.25s ease-in;
   z-index: 90;
@@ -31,7 +31,6 @@
   color: #363d54;
   font-size: 30px;
   text-decoration: none;
-  background-color: white;
   position: relative;
   padding: 0 20px 10px 20px;
   transition: opacity 0.3s;
@@ -40,4 +39,50 @@
 .Drawer ul li a:hover,
 .active {
   opacity: 0.7;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .Drawer {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .Drawer {
+    max-width: 220px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .Drawer {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .Drawer ul li a {
+    font-size: 25px;
+  }
+
+  .Drawer ul li a::before,
+  .Drawer ul li a::after {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .Drawer {
+    max-width: 170px;
+    max-height: 170px;
+  }
+  .Drawer ul li a {
+    font-size: 20px;
+  }
+
+  .Drawer ul li a::before,
+  .Drawer ul li a::after {
+    display: none;
+  }
+
+  .Drawer.close {
+    transform: translateX(-210px);
+  }
 }

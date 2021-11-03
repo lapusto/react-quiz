@@ -4,14 +4,66 @@
   padding-top: 100px;
   flex-grow: 1;
   width: 100%;
-  background: linear-gradient(90deg, #168ab8 0%, #7d3ff1 100%);
+  background-color: #000;
+  background-image: url("../../assets/img/quiz_back.svg");
+  background-repeat: no-repeat;
+  background-position: center 80px;
+  background-size: 700px auto;
 }
 
 .Quiz h1 {
-  color: white;
-  margin-left: 10px;
+  color: #000;
+  margin-left: 25px;
 }
 
 .QuizWrapper {
   width: 600px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .Quiz {
+    background-size: 600px auto;
+  }
+  .QuizWrapper {
+    width: 500px;
+  }
+  .Quiz h1 {
+    font-size: 25px;
+    margin-left: 28px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .Quiz {
+    background-size: 540px auto;
+  }
+  .QuizWrapper {
+    width: 400px;
+    font-size: 15px;
+  }
+  .Quiz h1 {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 575px) {
+  .Quiz {
+    background-size: 350px 220px;
+  }
+
+  .QuizWrapper {
+    width: 230px;
+    font-size: 10px;
+  }
+  .Quiz h1 {
+    font-size: 13px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }

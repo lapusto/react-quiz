@@ -5,6 +5,7 @@ import Input from "../../components/UI/Input/Input";
 import { connect } from "react-redux";
 import { auth } from "../../store/actions/auth";
 
+
 function validateEmail(email) {
   const re =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -31,7 +32,7 @@ class Auth extends Component {
         value: "",
         type: "password",
         label: "Password",
-        errorMessage: "Введите корректный пароль",
+        errorMessage: "Введите корректный пароль (не менее 6 символов)",
         valid: false,
         touched: false,
         validation: {
@@ -127,7 +128,6 @@ class Auth extends Component {
     return (
       <div className={classes.Auth}>
         <div>
-          <h1>Авторизация</h1>
           <form className={classes.AuthForm} onSubmit={this.submitHandler}>
             {this.renderInputs()}
             <Button
@@ -135,14 +135,14 @@ class Auth extends Component {
               onClick={this.loginHandler}
               disabled={!this.state.isFormValid}
             >
-              Войти
+              Log In
             </Button>
             <Button
-              type="primary"
+              type="success"
               onClick={this.registerHandler}
               disabled={!this.state.isFormValid}
             >
-              Зарегистрироваться
+              Sign Up
             </Button>
             <p>Try free@mail.ru, password: 123456</p>
           </form>

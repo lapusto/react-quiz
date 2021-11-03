@@ -28,16 +28,15 @@ const FinishedQuiz = (props) => {
           );
         })}
       </ul>
-
       <p>
-        Правильно {successCount} из {props.quiz.length}
+        Score: {successCount} out of {props.quiz.length} are correct
       </p>
       <div>
         <Button onClick={props.onRetry} type="primary">
           Try again
         </Button>
         <Link to="/quiz">
-          <Button type="success">Open the testlist</Button>
+          <Button type="primary">Open the testlist</Button>
         </Link>
       </div>
     </div>

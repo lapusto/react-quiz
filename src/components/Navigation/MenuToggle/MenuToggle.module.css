@@ -1,6 +1,6 @@
 .MenuToggle {
   position: fixed;
-  top: 40px;
+  top: 35px;
   left: 40px;
   font-size: 20px;
   cursor: pointer;
@@ -15,4 +15,36 @@
 
 .MenuToggle.open {
   left: 320px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .MenuToggle.open {
+    left: 270px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .MenuToggle.open {
+    left: 240px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .MenuToggle {
+    top: 25px;
+  }
+
+  .MenuToggle.open {
+    left: 210px;
+  }
+}
+
+@media (max-width: 575px) {
+  .MenuToggle {
+    top: 25px;
+  }
+
+  .MenuToggle.open {
+    left: 180px;
+  }
 }

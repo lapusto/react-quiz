@@ -23,7 +23,7 @@ class Quiz extends Component {
     return (
       <div className={classes.Quiz}>
         <div className={classes.QuizWrapper}>
-          <h1>Ответьте на все вопросы</h1>
+          <h1>Which one is correct?</h1>
 
           {this.props.loading || !this.props.quiz ? (
             <Loader />

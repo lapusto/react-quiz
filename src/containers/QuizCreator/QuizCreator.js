@@ -18,8 +18,8 @@ import {
 function createOptionControl(number) {
   return createControl(
     {
-      label: `Вариант ${number}`,
-      errorMessage: "Добавьте значение",
+      label: `Option ${number}`,
+      errorMessage: "add value",
       id: number,
     },
     { required: true }
@@ -30,8 +30,8 @@ function createFormControls() {
   return {
     question: createControl(
       {
-        label: "Введите вопрос:",
-        errorMessage: "Вопрос не может быть пустым",
+        label: "Question:",
+        errorMessage: "The question can't be empty",
       },
       { required: true }
     ),
@@ -136,7 +136,7 @@ class QuizCreator extends Component {
   render() {
     const select = (
       <Select
-        label="Укажите правильный ответ"
+        label="Right answer:"
         value={this.state.rightAnswerId}
         onChange={this.selectChangeHandler}
         options={[
@@ -150,24 +150,24 @@ class QuizCreator extends Component {
     return (
       <div className={classes.QuizCreator}>
         <div>
-          <h1>Создание теста</h1>
+          <h1>Create your own quiz:</h1>
           <form onSubmit={this.submitHandler}>
             {this.renderControls()}
 
             {select}
             <Button
-              type="primary"
+              type="success"
               onClick={this.addQuestionHandler}
               disabled={!this.state.isFormValid}
             >
-              Добавить вопрос
+              Add a question
             </Button>
             <Button
               type="success"
               onClick={this.createQuizHandler}
               disabled={this.props.quiz.length === 0}
             >
-              Создать тест
+              save 
             </Button>
           </form>
         </div>

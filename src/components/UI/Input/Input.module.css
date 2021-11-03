@@ -1,9 +1,11 @@
 .Input {
   margin-bottom: 15px;
+  
 }
 
 .Input label {
-  margin-bottom: 3px;
+  color: #fff;
+  margin-bottom: 5px;
   padding: 0;
   display: block;
   font-weight: bold;
