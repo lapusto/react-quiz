@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/react-quiz/static/css/main.cef1f0c0.chunk.css",
-    "main.js": "/react-quiz/static/js/main.87fe3eb2.chunk.js",
-    "main.js.map": "/react-quiz/static/js/main.87fe3eb2.chunk.js.map",
+    "main.css": "/react-quiz/static/css/main.0120ee99.chunk.css",
+    "main.js": "/react-quiz/static/js/main.5809d615.chunk.js",
+    "main.js.map": "/react-quiz/static/js/main.5809d615.chunk.js.map",
     "runtime-main.js": "/react-quiz/static/js/runtime-main.fa90a885.js",
     "runtime-main.js.map": "/react-quiz/static/js/runtime-main.fa90a885.js.map",
-    "static/js/2.b8f4b65a.chunk.js": "/react-quiz/static/js/2.b8f4b65a.chunk.js",
-    "static/js/2.b8f4b65a.chunk.js.map": "/react-quiz/static/js/2.b8f4b65a.chunk.js.map",
+    "static/js/2.c6b07bec.chunk.js": "/react-quiz/static/js/2.c6b07bec.chunk.js",
+    "static/js/2.c6b07bec.chunk.js.map": "/react-quiz/static/js/2.c6b07bec.chunk.js.map",
     "static/js/3.aea78d65.chunk.js": "/react-quiz/static/js/3.aea78d65.chunk.js",
     "static/js/3.aea78d65.chunk.js.map": "/react-quiz/static/js/3.aea78d65.chunk.js.map",
     "index.html": "/react-quiz/index.html",
-    "static/css/main.cef1f0c0.chunk.css.map": "/react-quiz/static/css/main.cef1f0c0.chunk.css.map",
-    "static/js/2.b8f4b65a.chunk.js.LICENSE.txt": "/react-quiz/static/js/2.b8f4b65a.chunk.js.LICENSE.txt"
+    "static/css/main.0120ee99.chunk.css.map": "/react-quiz/static/css/main.0120ee99.chunk.css.map",
+    "static/js/2.c6b07bec.chunk.js.LICENSE.txt": "/react-quiz/static/js/2.c6b07bec.chunk.js.LICENSE.txt",
+    "static/media/quiz.module.css": "/react-quiz/static/media/quiz_back.25a9d341.svg",
+    "static/media/QuizList.module.css": "/react-quiz/static/media/quiz_on.9aba01bf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.fa90a885.js",
-    "static/js/2.b8f4b65a.chunk.js",
-    "static/css/main.cef1f0c0.chunk.css",
-    "static/js/main.87fe3eb2.chunk.js"
+    "static/js/2.c6b07bec.chunk.js",
+    "static/css/main.0120ee99.chunk.css",
+    "static/js/main.5809d615.chunk.js"
   ]
 }
